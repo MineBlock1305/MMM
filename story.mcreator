@@ -222,6 +222,41 @@
           "src/main/resources/assets/story/models/item/rebirthicon.json"
         ]
       }
+    },
+    {
+      "name": "Rebirth",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rebirth",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/story/advancements/rebirth.json"
+        ]
+      }
+    },
+    {
+      "name": "Start",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/StartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -236,6 +271,12 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "globalevents",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -243,7 +284,8 @@
     "en_us": {
       "item.story.test_spawn_egg": "Test Spawn Egg",
       "entity.story.test": "Test",
-      "gui.story.dialog_gui.label_tiekst_tiekst_tiekst_tiekst_tiekst_tie": "текст",
+      "advancements.rebirth.title": "Rebirth",
+      "advancements.rebirth.descr": "New story!",
       "item.story.rebirthicon": "Rebirthicon"
     }
   },
