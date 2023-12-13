@@ -58,6 +58,8 @@ public class StartProcedure {
 					StoryMod.queueServerWork(20, () -> {
 						if (entity instanceof Player _player && !_player.level.isClientSide())
 							_player.displayClientMessage(Component.literal(("[" + entity.getDisplayName().getString() + "]: \u042F... \u042F \u0436\u0438\u0432?")), false);
+						StoryMod.queueServerWork(48000, () -> {
+						});
 					});
 				});
 			}

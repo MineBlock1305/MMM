@@ -224,20 +224,6 @@
       }
     },
     {
-      "name": "F",
-      "type": "musicdisc",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "f",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/story/models/item/f.json",
-          "src/main/java/net/mcreator/story/item/FItem.java"
-        ]
-      }
-    },
-    {
       "name": "Rebirth",
       "type": "achievement",
       "compiles": true,
@@ -298,6 +284,8 @@
     "en_us": {
       "item.story.test_spawn_egg": "Test Spawn Egg",
       "entity.story.test": "Test",
+      "advancements.rebirth.title": "Rebirth",
+      "advancements.rebirth.descr": "New story!",
       "item.story.rebirthicon": "Rebirthicon"
     }
   },
