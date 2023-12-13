@@ -222,6 +222,20 @@
           "src/main/resources/assets/story/models/item/rebirthicon.json"
         ]
       }
+    },
+    {
+      "name": "F",
+      "type": "musicdisc",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "f",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/story/models/item/f.json",
+          "src/main/java/net/mcreator/story/item/FItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -243,7 +257,9 @@
     "en_us": {
       "item.story.test_spawn_egg": "Test Spawn Egg",
       "entity.story.test": "Test",
+      "item.story.f": "F",
       "gui.story.dialog_gui.label_tiekst_tiekst_tiekst_tiekst_tiekst_tie": "текст",
+      "item.story.f.desc": "srtgth",
       "item.story.rebirthicon": "Rebirthicon"
     }
   },
