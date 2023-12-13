@@ -1,0 +1,272 @@
+{
+  "mod_elements": [
+    {
+      "name": "EntityPROC",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_proc",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/EntityPROCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DialogGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dialog_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/client/gui/DialogGUIScreen.java",
+          "src/main/java/net/mcreator/story/network/DialogGUIButtonMessage.java",
+          "src/main/java/net/mcreator/story/world/inventory/DialogGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "TestPriShchielchkiePKMPoSushchnosti",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_pri_shchielchkie_pkm_po_sushchnosti",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/TestPriShchielchkiePKMPoSushchnostiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/entity/TestEntity.java",
+          "src/main/resources/assets/story/models/item/test_spawn_egg.json",
+          "src/main/resources/data/story/forge/biome_modifier/test_biome_modifier.json",
+          "src/main/java/net/mcreator/story/client/renderer/TestRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Dialognumbersetproc",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dialognumbersetproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/DialognumbersetprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dialognumbersetcomand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dialognumbersetcomand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/command/DialognumbersetcomandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Choose1proc",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_1proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/Choose1procProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Choose2proc",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_2proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/Choose2procProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Choose3proc",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_3proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/Choose3procProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Choose3if",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_3if",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/Choose3ifProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rebirthicon",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rebirthicon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/item/RebirthiconItem.java",
+          "src/main/resources/assets/story/models/item/rebirthicon.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "chosenumber",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "dialognumber",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.story.test_spawn_egg": "Test Spawn Egg",
+      "entity.story.test": "Test",
+      "gui.story.dialog_gui.label_tiekst_tiekst_tiekst_tiekst_tiekst_tie": "текст",
+      "item.story.rebirthicon": "Rebirthicon"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "story",
+    "modName": "story",
+    "version": "1.0.0",
+    "author": "sasha, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.story",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}
