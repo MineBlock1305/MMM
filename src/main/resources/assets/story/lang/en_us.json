@@ -1,5 +1,9 @@
 {
   "item.story.test_spawn_egg": "Test Spawn Egg",
   "entity.story.test": "Test",
+  "item.story.f": "F",
+  "advancements.rebirth.title": "Rebirth",
+  "advancements.rebirth.descr": "New story!",
+  "item.story.f.desc": "srtgth",
   "item.story.rebirthicon": "Rebirthicon"
 }

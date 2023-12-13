@@ -29,8 +29,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/story/client/gui/DialogGUIScreen.java",
-          "src/main/java/net/mcreator/story/network/DialogGUIButtonMessage.java",
-          "src/main/java/net/mcreator/story/world/inventory/DialogGUIMenu.java"
+          "src/main/java/net/mcreator/story/world/inventory/DialogGUIMenu.java",
+          "src/main/java/net/mcreator/story/network/DialogGUIButtonMessage.java"
         ]
       }
     },
@@ -78,10 +78,10 @@
       "registry_name": "test",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/story/entity/TestEntity.java",
-          "src/main/resources/assets/story/models/item/test_spawn_egg.json",
           "src/main/resources/data/story/forge/biome_modifier/test_biome_modifier.json",
-          "src/main/java/net/mcreator/story/client/renderer/TestRenderer.java"
+          "src/main/resources/assets/story/models/item/test_spawn_egg.json",
+          "src/main/java/net/mcreator/story/client/renderer/TestRenderer.java",
+          "src/main/java/net/mcreator/story/entity/TestEntity.java"
         ]
       }
     },
@@ -218,8 +218,8 @@
       "registry_name": "rebirthicon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/story/item/RebirthiconItem.java",
-          "src/main/resources/assets/story/models/item/rebirthicon.json"
+          "src/main/resources/assets/story/models/item/rebirthicon.json",
+          "src/main/java/net/mcreator/story/item/RebirthiconItem.java"
         ]
       }
     },
@@ -271,6 +271,25 @@
           }
         ]
       }
+    },
+    {
+      "name": "Time",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/TimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -298,6 +317,10 @@
     "en_us": {
       "item.story.test_spawn_egg": "Test Spawn Egg",
       "entity.story.test": "Test",
+      "item.story.f": "F",
+      "advancements.rebirth.title": "Rebirth",
+      "advancements.rebirth.descr": "New story!",
+      "item.story.f.desc": "srtgth",
       "item.story.rebirthicon": "Rebirthicon"
     }
   },
