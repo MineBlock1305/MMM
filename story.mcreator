@@ -222,6 +222,20 @@
           "src/main/resources/assets/story/models/item/rebirthicon.json"
         ]
       }
+    },
+    {
+      "name": "Ad",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ad",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/story/models/item/ad.json",
+          "src/main/java/net/mcreator/story/item/AdItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -244,6 +258,7 @@
       "item.story.test_spawn_egg": "Test Spawn Egg",
       "entity.story.test": "Test",
       "gui.story.dialog_gui.label_tiekst_tiekst_tiekst_tiekst_tiekst_tie": "текст",
+      "item.story.ad": "Ad",
       "item.story.rebirthicon": "Rebirthicon"
     }
   },
