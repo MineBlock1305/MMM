@@ -90,6 +90,7 @@ public class StoryModVariables {
 		public double chosenumber = 0;
 		public double dialognumber = 0;
 		public double globalevents = 0;
+		public double kwest = 0.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -101,6 +102,7 @@ public class StoryModVariables {
 			chosenumber = nbt.getDouble("chosenumber");
 			dialognumber = nbt.getDouble("dialognumber");
 			globalevents = nbt.getDouble("globalevents");
+			kwest = nbt.getDouble("kwest");
 		}
 
 		@Override
@@ -108,6 +110,7 @@ public class StoryModVariables {
 			nbt.putDouble("chosenumber", chosenumber);
 			nbt.putDouble("dialognumber", dialognumber);
 			nbt.putDouble("globalevents", globalevents);
+			nbt.putDouble("kwest", kwest);
 			return nbt;
 		}
 

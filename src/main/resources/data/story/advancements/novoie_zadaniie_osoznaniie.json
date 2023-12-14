@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "story:znak_vosklitsaniia"
+    },
+    "title": {
+      "translate": "advancements.novoie_zadaniie_osoznaniie.title"
+    },
+    "description": {
+      "translate": "advancements.novoie_zadaniie_osoznaniie.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "novoie_zadaniie_osoznaniie": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "story:rebirth"
+}

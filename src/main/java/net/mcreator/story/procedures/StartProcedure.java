@@ -62,5 +62,20 @@ public class StartProcedure {
 				});
 			}
 		});
+		StoryMod.queueServerWork(48000, () -> {
+			if (StoryModVariables.MapVariables.get(world).globalevents == 1) {
+				StoryModVariables.MapVariables.get(world).globalevents = 2;
+				StoryModVariables.MapVariables.get(world).syncData(world);
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("story:novoie_zadaniie_osoznaniie"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						Iterator _iterator = _ap.getRemainingCriteria().iterator();
+						while (_iterator.hasNext())
+							_player.getAdvancements().award(_adv, (String) _iterator.next());
+					}
+				}
+			}
+		});
 	}
 }

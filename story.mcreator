@@ -23,6 +23,7 @@
     {
       "name": "DialogGUI",
       "type": "gui",
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dialog_gui",
@@ -240,6 +241,7 @@
     {
       "name": "Rebirth",
       "type": "achievement",
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rebirth",
@@ -290,6 +292,112 @@
           }
         ]
       }
+    },
+    {
+      "name": "SwordNot",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_not",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/SwordNotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kvest",
+      "type": "gui",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kvest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/client/gui/KvestScreen.java",
+          "src/main/java/net/mcreator/story/world/inventory/KvestMenu.java",
+          "src/main/java/net/mcreator/story/network/KvestButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Kwest",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kwest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/procedures/KwestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZnakVosklitsaniia",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "znak_vosklitsaniia",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/item/ZnakVosklitsaniiaItem.java",
+          "src/main/resources/assets/story/models/item/znak_vosklitsaniia.json"
+        ]
+      }
+    },
+    {
+      "name": "NovoieZadaniieOsoznaniie",
+      "type": "achievement",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "novoie_zadaniie_osoznaniie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/story/advancements/novoie_zadaniie_osoznaniie.json"
+        ]
+      }
+    },
+    {
+      "name": "Zaghadochnyiiech",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zaghadochnyiiech",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/story/item/ZaghadochnyiiechItem.java",
+          "src/main/resources/assets/story/models/item/zaghadochnyiiech.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -310,17 +418,29 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "kwest",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "gui.story.kvest.pob1": "",
+      "advancements.novoie_zadaniie_osoznaniie.descr": "Изучите себя",
+      "item.story.zaghadochnyiiech": "Загадочный Меч",
+      "item.story.f.desc": "srtgth",
       "item.story.test_spawn_egg": "Test Spawn Egg",
-      "entity.story.test": "Test",
+      "item.story.znak_vosklitsaniia": "Znak Vosklitsaniia",
       "item.story.f": "F",
+      "entity.story.test": "Test",
       "advancements.rebirth.title": "Rebirth",
       "advancements.rebirth.descr": "New story!",
-      "item.story.f.desc": "srtgth",
+      "gui.story.kvest.kwest": "",
+      "advancements.novoie_zadaniie_osoznaniie.title": "Новое задание: Осознание. ",
       "item.story.rebirthicon": "Rebirthicon"
     }
   },

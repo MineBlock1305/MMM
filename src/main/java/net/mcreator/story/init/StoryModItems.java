@@ -12,6 +12,8 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.story.item.ZnakVosklitsaniiaItem;
+import net.mcreator.story.item.ZaghadochnyiiechItem;
 import net.mcreator.story.item.RebirthiconItem;
 import net.mcreator.story.StoryMod;
 
@@ -19,4 +21,6 @@ public class StoryModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, StoryMod.MODID);
 	public static final RegistryObject<Item> REBIRTHICON = REGISTRY.register("rebirthicon", () -> new RebirthiconItem());
 	public static final RegistryObject<Item> TEST_SPAWN_EGG = REGISTRY.register("test_spawn_egg", () -> new ForgeSpawnEggItem(StoryModEntities.TEST, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ZNAK_VOSKLITSANIIA = REGISTRY.register("znak_vosklitsaniia", () -> new ZnakVosklitsaniiaItem());
+	public static final RegistryObject<Item> ZAGHADOCHNYIIECH = REGISTRY.register("zaghadochnyiiech", () -> new ZaghadochnyiiechItem());
 }

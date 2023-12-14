@@ -1,9 +1,15 @@
 {
+  "gui.story.kvest.pob1": "",
+  "advancements.novoie_zadaniie_osoznaniie.descr": "Изучите себя",
+  "item.story.zaghadochnyiiech": "Загадочный Меч",
+  "item.story.f.desc": "srtgth",
   "item.story.test_spawn_egg": "Test Spawn Egg",
-  "entity.story.test": "Test",
+  "item.story.znak_vosklitsaniia": "Znak Vosklitsaniia",
   "item.story.f": "F",
+  "entity.story.test": "Test",
   "advancements.rebirth.title": "Rebirth",
   "advancements.rebirth.descr": "New story!",
-  "item.story.f.desc": "srtgth",
+  "gui.story.kvest.kwest": "",
+  "advancements.novoie_zadaniie_osoznaniie.title": "Новое задание: Осознание. ",
   "item.story.rebirthicon": "Rebirthicon"
 }
