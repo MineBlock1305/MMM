@@ -13,7 +13,6 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.story.world.inventory.DialogGUIMenu;
 import net.mcreator.story.procedures.EntityPROCProcedure;
-import net.mcreator.story.procedures.Choose3ifProcedure;
 import net.mcreator.story.network.DialogGUIButtonMessage;
 import net.mcreator.story.StoryMod;
 
@@ -29,7 +28,6 @@ public class DialogGUIScreen extends AbstractContainerScreen<DialogGUIMenu> {
 	private final Player entity;
 	ImageButton imagebutton_select;
 	ImageButton imagebutton_s1;
-	ImageButton imagebutton_s11;
 
 	public DialogGUIScreen(DialogGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -84,6 +82,8 @@ public class DialogGUIScreen extends AbstractContainerScreen<DialogGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack, Component.translatable("gui.story.dialog_gui.label_otkazatsia"), 57, 16, -13434880);
+		this.font.draw(poseStack, Component.translatable("gui.story.dialog_gui.label_soghlasitsia"), 57, 52, -16777165);
 	}
 
 	@Override
@@ -112,19 +112,5 @@ public class DialogGUIScreen extends AbstractContainerScreen<DialogGUIMenu> {
 		});
 		guistate.put("button:imagebutton_s1", imagebutton_s1);
 		this.addRenderableWidget(imagebutton_s1);
-		imagebutton_s11 = new ImageButton(this.leftPos + 12, this.topPos + 79, 32, 32, 0, 0, 32, new ResourceLocation("story:textures/screens/atlas/imagebutton_s11.png"), 32, 64, e -> {
-			if (Choose3ifProcedure.execute(world)) {
-				StoryMod.PACKET_HANDLER.sendToServer(new DialogGUIButtonMessage(2, x, y, z));
-				DialogGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		}) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (Choose3ifProcedure.execute(world))
-					super.render(ms, gx, gy, ticks);
-			}
-		};
-		guistate.put("button:imagebutton_s11", imagebutton_s11);
-		this.addRenderableWidget(imagebutton_s11);
 	}
 }

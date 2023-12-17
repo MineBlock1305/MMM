@@ -136,10 +136,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -431,12 +427,14 @@
     "en_us": {
       "gui.story.kvest.pob1": "",
       "advancements.novoie_zadaniie_osoznaniie.descr": "Изучите себя",
+      "gui.story.dialog_gui.label_otkazatsia": "Отказаться",
       "item.story.zaghadochnyiiech": "Загадочный Меч",
       "item.story.f.desc": "srtgth",
       "item.story.test_spawn_egg": "Test Spawn Egg",
       "item.story.znak_vosklitsaniia": "Znak Vosklitsaniia",
       "item.story.f": "F",
       "entity.story.test": "Test",
+      "gui.story.dialog_gui.label_soghlasitsia": "Согласится.",
       "advancements.rebirth.title": "Rebirth",
       "advancements.rebirth.descr": "New story!",
       "gui.story.kvest.kwest": "",

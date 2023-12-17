@@ -12,7 +12,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.story.world.inventory.DialogGUIMenu;
-import net.mcreator.story.procedures.Choose3procProcedure;
 import net.mcreator.story.procedures.Choose2procProcedure;
 import net.mcreator.story.procedures.Choose1procProcedure;
 import net.mcreator.story.StoryMod;
@@ -66,15 +65,11 @@ public class DialogGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			Choose1procProcedure.execute(world, entity);
+			Choose1procProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
 			Choose2procProcedure.execute(world, entity);
-		}
-		if (buttonID == 2) {
-
-			Choose3procProcedure.execute(world, entity);
 		}
 	}
 

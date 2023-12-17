@@ -37,7 +37,7 @@
         "data": {
           "name": "imagebutton_select",
           "image": "s1.png",
-          "hoveredImage": "s2.png",
+          "hoveredImage": "dv.png",
           "onClick": {
             "name": "Choose1proc"
           },
@@ -50,7 +50,7 @@
         "data": {
           "name": "imagebutton_s1",
           "image": "s1.png",
-          "hoveredImage": "s2.png",
+          "hoveredImage": "dv.png",
           "onClick": {
             "name": "Choose2proc"
           },
@@ -59,19 +59,33 @@
         }
       },
       {
-        "type": "imagebutton",
+        "type": "label",
         "data": {
-          "name": "imagebutton_s11",
-          "image": "s1.png",
-          "hoveredImage": "s2.png",
-          "onClick": {
-            "name": "Choose3proc"
+          "name": "label_otkazatsia",
+          "text": {
+            "fixedValue": "Отказаться"
           },
-          "displayCondition": {
-            "name": "Choose3if"
+          "color": {
+            "value": -13434880,
+            "falpha": 0.0
           },
-          "x": 114,
-          "y": 116
+          "x": 159,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_soghlasitsia",
+          "text": {
+            "fixedValue": "Согласится."
+          },
+          "color": {
+            "value": -16777165,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 89
         }
       }
     ],
